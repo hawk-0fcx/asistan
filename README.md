@@ -1,2 +1,2 @@
 # asistan
-Hawk Asistan Toolu
+install.py 'yi kurmayı unutmayınız
