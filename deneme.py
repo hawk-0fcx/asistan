@@ -107,7 +107,6 @@ if asistan =="16":
     r = requests.get(url)
     txt = r.text
     print(txt)
-
 if asistan =="17":
 
     hedef_ip = input(Fore.RED + "hedef ip: ")
@@ -140,7 +139,15 @@ if asistan =="21":
     print(result.summary)
     
 if asistan =="22":
-    webbrowser.open("https://flipboard.com/")
+    url=("https://www.cnnturk.com/feed/rss/all/news")
+haberler=feedparser.parse(url)
+i=0
+for x in haberler.entries:
+    i+=1    
+    print(i,".haber")
+    print(x.title)
+    print(x.link)
+    print(x.description)
 
 if asistan =="23":
     webbrowser.open("https://tr-tr.facebook.com/help/instagram/contact/383679321740945")
@@ -167,9 +174,14 @@ if asistan =="29":
     
 if asistan =="30":
     os.system("owasp-zap")
-    
 if asistan =="31":
-    os.system("wpscan")
+    vulnwp = input("URL: ")
+    os.system("wpscan –url"+vulnwp+"–enumerate u")
     
 if asistan =="32":
-    os.system("jsql")
+    print("""   
+    Get The Tables (no need to write database name)
+    Tabloları Al ( veri tabanı adı yazmaya gerek yok )
+    """)
+    vulnsqlk = input("URL: ")
+    os.system("sqlmap -u"+vulnsqlk+"--tables --random-agent --tamper=space2comment")
