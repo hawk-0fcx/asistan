@@ -10,13 +10,15 @@ import feedparser
 import colorama
 from colorama import Fore, Back, Style, init
 import wikipedia
-
+print("--------------------------------------------------)
 print("-------------------------------------------------")
 print("                                                 ")
 print("             HAWK ASİSTAN TOOLU                  ")
 print("                                                 ")
 print("-------------------------------------------------")
-print()
+print("--------------------------------------------------)
+print("                                                  ")
+print("                                                  ")
 print("1.Youtube'u Aç")
 print("2.Google'u Aç")
 print("3.Gmail'i Aç")
