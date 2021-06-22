@@ -10,7 +10,7 @@ import feedparser
 import colorama
 from colorama import Fore, Back, Style, init
 import wikipedia
-print("--------------------------------------------------)
+print("-------------------------------------------------")
 print("-------------------------------------------------")
 print("                                                 ")
 print("             HAWK ASİSTAN TOOLU                  ")
