@@ -10,6 +10,7 @@ import feedparser
 import colorama
 from colorama import Fore, Back, Style, init
 import wikipedia
+os.system("clear")
 print("-------------------------------------------------")
 print("-------------------------------------------------")
 print("                                                 ")
@@ -141,10 +142,10 @@ if asistan =="21":
     print(result.summary)
     
 if asistan =="22":
-    url=("https://www.cnnturk.com/feed/rss/all/news")
-haberler=feedparser.parse(url)
+    url2=("https://www.cnnturk.com/feed/rss/all/news")
+haberler1=feedparser.parse(url2)
 i=0
-for x in haberler.entries:
+for x in haberler1.entries:
     i+=1    
     print(i,".haber")
     print(x.title)
